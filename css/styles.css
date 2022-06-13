@@ -578,12 +578,36 @@ footer{
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 470px) {
     h1{
         font-size: 50px;
     }
     .logo{
         padding: 10px 10px;
         height: 45px;
+    }
+    .mySwiper .price{
+        font-size: 12px;
+    }
+    .mySwiper .vid-but a{
+        font-size: 16px;
+    }
+    .mySwiper .vid-overlay-container {
+        height: 53px;
+    }
+    .mySwiper .vid-overlay{
+        bottom: 34px;
+    }
+    .mySwiper .price-container {
+        bottom: 41px;
+    }
+    .mySwiper1 .text-box {
+        font-size: 12px;
+    }
+    .swiper-button-prev {
+        left: 25px;
+    }
+    .swiper-button-next {
+        right: 25px;
     }
 }
