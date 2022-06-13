@@ -64,12 +64,15 @@ header{
     background-size:cover;
     background-position:  right;
     background-repeat:  no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     /* padding: 50px; */
     padding-top: 90px;
 }
 .home-container .title{
     font-size: 60px;
+}
+.navbar-nav {
+    height: 72px;
 }
 .side-background{
     position: absolute;
@@ -142,8 +145,10 @@ header{
 .mySwiper .vid-but a{
     font-size: 24px;
     width: 100%;
-    text-align: center;
-    vertical-align: middle;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mySwiper1 {
@@ -183,6 +188,8 @@ header{
     /* min-height: 30vh; */
     width: 100%;
     border: 7px solid #b9a144;
+    display: flex;
+    justify-content: flex-start;
 }
 .home-image{
     height: 100%;
@@ -293,7 +300,6 @@ header{
 }
 #faq{
     background-color: #011f5d;
-    min-height: 100vh;
 }
 .faq-text{
     background-color: transparent;
@@ -310,7 +316,6 @@ header{
     border-bottom: rgba(245, 245, 245, 0.445) solid 1px;
 }
 #team{
-    min-height: 100vh;
     background-color: #000836;
 }
 .card{
@@ -478,11 +483,54 @@ header{
 .input-form:focus-within{
     box-shadow: 0 0 0 0.25rem #5e00687a;
 }
+.dropdown{
+    align-self: center;
+    position: relative;
+}
+.dropdown-item{
+    padding: 0 0;
+    margin-bottom: 6px;
+    background-color: transparent;
+}
+.dropdown-menu {
+    margin-top: 6px!important;
+}
+.dropdown-toggle{
+    background: transparent;
+    border: none;
+    color: white;
+}
+.dropdown img{
+    max-width: 27px;
+}
+.dropdown-menu{
+    min-width: 50%;
+    position: absolute!important;
+    background-color: transparent;
+    align-items:flex-start;
+    border: none;
+}
+
 footer{
     background-color: rgb(0, 17, 51);
 }
 
+@media screen and (max-width: 1180px) {
+    .home-container .title{
+        font-size: 50px;
+    }
+    .mySwiper1 .text-box{
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 1120px) {
+    .home-container .title{
+        font-size: 50px;
+    }
+    .mySwiper .price{
+        font-size: 20px;
+    }
     .mySwiper .vid-overlay-container{
         height: 80px;
     }
@@ -495,17 +543,38 @@ footer{
     .whitepaper {
       display: block;
     }
-    
+    .languages{
+      display: block;
+    }
     .blank-card{
         display: none;
     }
+    .home-container .title{
+        font-size: 40px;
+    }
+    .mySwiper .price{
+        font-size: 16px;
+    }
 }
+
 @media screen and (min-width: 992px) {
     .whitepaper {
         display: none;
     }
+    .languages{
+        display: none;
+    }
+  
     .blank-card{
         display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title{
+        display: none;
+    }
+    .home-container{
+        flex-direction: column-reverse;
     }
 }
 
