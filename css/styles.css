@@ -68,6 +68,9 @@ header{
     /* padding: 50px; */
     padding-top: 90px;
 }
+.home-container {
+    padding: 3rem;
+}
 .home-container .title{
     font-size: 60px;
 }
@@ -575,6 +578,10 @@ footer{
     }
     .home-container{
         flex-direction: column-reverse;
+        padding: 0;
+    }
+    .side-background {
+        display: none;
     }
 }
 
