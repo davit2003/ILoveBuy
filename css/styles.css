@@ -65,11 +65,10 @@ header{
     background-position:  right;
     background-repeat:  no-repeat;
     min-height: 100vh;
-    /* padding: 50px; */
-    padding-top: 90px;
+    padding: 5rem 0;
 }
 .home-container {
-    padding: 3rem;
+    padding: 0 3rem;
 }
 .home-container .title{
     font-size: 60px;
@@ -81,7 +80,8 @@ header{
     position: absolute;
     right: 0;
     top: 0;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
     z-index: 0;
 }
 #background2{
@@ -144,6 +144,7 @@ header{
     right: 5%;
     height: 60%;
     width: 50%;
+    transition: 0.2s;
 }
 .mySwiper .vid-but a{
     font-size: 24px;
@@ -152,6 +153,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.mySwiper .vid-but:hover{
+    /* backdrop-filter: brightness(1.2); */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
 }
 
 .mySwiper1 {
@@ -198,6 +204,29 @@ header{
     height: 100%;
     width: 100%;
     border-radius: 50px;
+
+}
+.social div{
+    font-size: 20px;
+    transition: 0.2s;
+    border: 1px solid white;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.social div a{
+    display: block;
+    width: 48px;
+    height: 48px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social div:hover{
+    transform: scale(1.2);
 }
 .transition{
     height: 250px;
@@ -276,22 +305,28 @@ header{
     background-color: #000836;
     min-height: 100vh;
 }
-.stats{
-    background-color: black;
-    border-radius: 10px;
-    font-size: 18px;
-    transition: 0.2s;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 30px;
-    align-items: flex-start;
-    margin-bottom: 12px;
-    transition: all 0.5s ease;
+.stats .stat-name{
+    font-size: 13px;
+    opacity: 0.7;
 }
+.stats .middle-stat{
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+
 .roadmap{
     background-color: #011f5d;
+}
+#sponsors{
+    background-color: #011f5d;
+}
+#sponsors div{
+    text-align: center;
+}
+#sponsors img{
+    width: 100%;
+    
 }
 .sidebar{
     display: none;
@@ -329,7 +364,6 @@ header{
     background-color: #011f5d;
     padding: 0;
     border-radius: 20px;
-    border: #5e006875 solid 1px;
     font-size: 20px;
     border-top: 1px solid #011f5d;
 }
@@ -362,12 +396,6 @@ header{
     top: calc(50% - 10px);
     left: calc(50% - 10px);
     z-index: 3;
-}
-.team-card-image:hover .mailbox{
-    opacity: 1;
-}
-.team-card-image:hover::after{
-    opacity: 1;
 }
 .mailbox{
     width: 50px;
@@ -546,7 +574,7 @@ footer{
 }
 
 @media screen and (max-width: 1180px) {
-    .home-container .title{
+    h1{
         font-size: 50px;
     }
     .mySwiper1 .text-box{
@@ -555,7 +583,7 @@ footer{
 }
 
 @media screen and (max-width: 1120px) {
-    .home-container .title{
+    h1{
         font-size: 50px;
     }
     .mySwiper .price{
@@ -579,7 +607,7 @@ footer{
     .blank-card{
         display: none;
     }
-    .home-container .title{
+    h1{
         font-size: 40px;
     }
     .mySwiper .price{
