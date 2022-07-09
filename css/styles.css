@@ -128,7 +128,7 @@ header{
     height: 100%;
     width: 100%;
     position: absolute;
-    bottom: 56px;
+    bottom: 59px;
     left: 28%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 35%);
     /* border-bottom-right-radius: 20px; */
@@ -168,7 +168,7 @@ header{
 
 .mySwiper1 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     background-image: linear-gradient(to bottom left, #007f9f, #3bc5d2);
 
     /* Center slide text vertically */
@@ -214,6 +214,9 @@ header{
 
 }
 
+.social{
+    z-index: 4;
+}
 .social div{
     font-size: 20px;
     transition: 0.2s;
@@ -582,13 +585,23 @@ footer{
         bottom: 114px;
     }
 }
+@media screen and (max-width: 1300px) {
+    .mySwiper .price{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .mySwiper .price{
+        font-size: 18px;
+    }
+}
 
 @media screen and (max-width: 1180px) {
     h1{
         font-size: 50px;
     }
     .mySwiper1 .text-box{
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -596,11 +609,11 @@ footer{
     h1{
         font-size: 50px;
     }
-    .mySwiper .price{
-        font-size: 20px;
-    }
     .mySwiper .vid-overlay-container{
         height: 80px;
+    }
+    .mySwiper .price{
+        font-size: 16px;
     }
 }
 
@@ -621,7 +634,10 @@ footer{
         font-size: 40px;
     }
     .mySwiper .price{
-        font-size: 16px;
+        font-size: 12px;
+    }
+    .mySwiper1 .swiper-slide{
+        font-size: 14px;
     }
 }
 
@@ -632,12 +648,11 @@ footer{
     .languages{
         display: none;
     }
-  
     .blank-card{
         display: block;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .title{
         display: none;
     }
@@ -647,6 +662,9 @@ footer{
     }
     .side-background {
         display: none;
+    }
+    .mySwiper .price{
+        font-size: 16px;
     }
 }
 
