@@ -206,6 +206,14 @@ header{
     border-radius: 50px;
 
 }
+
+.roadmapvid{
+    height: 50%;
+    width: 100%;
+    border-radius: 50px;
+
+}
+
 .social div{
     font-size: 20px;
     transition: 0.2s;
@@ -320,9 +328,11 @@ header{
 }
 #sponsors{
     background-color: #011f5d;
+    
 }
 #sponsors div{
     text-align: center;
+    align-items: center;
 }
 #sponsors img{
     width: 100%;
